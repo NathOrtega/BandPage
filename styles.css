@@ -116,6 +116,7 @@ a {
 .titles {
   margin-bottom: 20px;
   font-weight: 500;
+  font-size: 24px;
 }
 
 .subtitles {
@@ -156,4 +157,17 @@ a {
 
 .bandMemberImage {
   border-radius: 5px;
+}
+
+.tourDatesContainer {
+  background-color: black;
+}
+
+.titles--white {
+  color: white;
+}
+
+.datesInfoContainer {
+  background-color: white;
+  width: 60%;
 }
