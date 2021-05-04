@@ -161,13 +161,212 @@ a {
 
 .tourDatesContainer {
   background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.titles--white {
+.titles--whiteAndmargin {
   color: white;
+  margin-top: 50px;
 }
 
 .datesInfoContainer {
+  margin: 20px 0 30px;
   background-color: white;
-  width: 60%;
+  width: 70%;
+}
+
+.dateContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid gray;
+}
+
+.dateContainer--justifyContent {
+  justify-content: space-between;
+}
+
+.date {
+  margin-right: 15px;
+  color: gray;
+}
+
+.soldOutSign {
+  background-color: red;
+  padding: 5px;
+  color: white;
+  font-weight: 550;
+}
+
+.numberOfDates {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  margin-right: 20px;
+  width: 30px;
+  text-align: center;
+  border-radius: 50px;
+}
+
+.concertInfoCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+  margin-bottom: 100px;
+}
+
+.infoCard {
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+  background-color: white;
+}
+
+.cardImage {
+  width: 100%;
+  object-fit: cover;
+}
+
+.cardText {
+  padding: 20px;
+}
+
+.date--margin {
+  margin: 20px 0;
+}
+
+.buyTicketsButton {
+  margin: 20px 0 0;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.buyTicketsButton:hover {
+  cursor: pointer;
+}
+
+.buttonText {
+  color: white;
+}
+
+.contactInfoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px 0;
+  height: 500px;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 70%;
+  width: 50%;
+  margin-top: 100px;
+}
+
+.contactData {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.data {
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.infoIcons {
+  width: 16px;
+  height: 16px;
+}
+
+.dataText {
+  margin-left: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  width: 410px;
+}
+
+.nameAndMailContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.formItem {
+  padding: 10px;
+  width: 200px;
+}
+
+.formItem--marginRight {
+  margin-right: 10px;
+}
+
+.formItem--widthAndMargin {
+  width: 410px;
+  margin: 10px 0;
+}
+
+.contactButton {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  width: 80px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+}
+
+.contactButton:hover {
+  cursor: pointer;
+}
+
+.map {
+  width: 100%;
+}
+
+footer {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialMedia {
+  color: gray;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.poweredBy {
+  color: gray;
+}
+
+.footerAnchor {
+  color: gray;
+  text-decoration: underline;
 }

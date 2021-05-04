@@ -99,7 +99,7 @@
     </div>
   </section>
   <section class="tourDatesContainer">
-    <p class="titles titles--white">TOUR DATES</p>
+    <p class="titles titles--whiteAndmargin">TOUR DATES</p>
     <p class="subtitles">Remember to book your tickets!</p>
     <div class="datesInfoContainer">
       <div class="dateContainer">
@@ -114,7 +114,7 @@
           <p>Sold out</p>
         </div>
        </div>
-       <div class="dateContainer">
+       <div class="dateContainer dateContainer--justifyContent">
         <p class="date">November</p>
         <div class="numberOfDates">
           <p>3</p>
@@ -126,36 +126,94 @@
         <div>
           <img class="cardImage" src="./Resources/newyork.jpg" alt="New York">
         </div>
-        <p class="cityName">New York</p>
-        <p class="date">Fri 27 Nov 2016</p>
-        <p class="description">praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
-        <button type="button" class="buyTicketsButton"> 
-          <a href="#">Buy Tickets</a>
-        </button>
+        <div class="cardText">
+          <p class="cityName">New York</p>
+          <p class="date date--margin">Fri 27 Nov 2016</p>
+          <p>praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
+          <button type="button" class="buyTicketsButton"> 
+            <a href="#" class="buttonText">Buy Tickets</a>
+          </button>
+        </div>
       </div>
       <div class="infoCard">
         <div>
           <img class="cardImage" src="./Resources/paris.jpg" alt="Paris">
         </div>
-        <p class="cityName">Paris</p>
-        <p class="date">Sat 28 Nov 2016</p>
-        <p class="description">praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
-        <button type="button" class="buyTicketsButton"> 
-          <a href="#">Buy Tickets</a>
-        </button>
+        <div class="cardText">
+          <p class="cityName">Paris</p>
+          <p class="date date--margin">Sat 28 Nov 2016</p>
+          <p>praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
+          <button type="button" class="buyTicketsButton"> 
+            <a href="#" class="buttonText">Buy Tickets</a>
+          </button>
+        </div>
       </div>
       <div class="infoCard">
         <div>
           <img class="cardImage" src="./Resources/sanfran.jpg" alt="San Francisco">
         </div>
-        <p class="cityName">San Francisco</p>
-        <p class="date">Sun 29 Nov 2016</p>
-        <p class="description">praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
-        <button type="button" class="buyTicketsButton"> 
-          <a href="#">Buy Tickets</a>
-        </button>
+        <div class="cardText">
+          <p class="cityName">San Francisco</p>
+          <p class="date date--margin">Sun 29 Nov 2016</p>
+          <p>praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
+          <button type="button" class="buyTicketsButton"> 
+            <a href="#" class="buttonText">Buy Tickets</a>
+          </button>
+        </div>
       </div>
     </div>
   </section>
+  <section class="contact">
+    <div class="contactInfoContainer">
+      <p class="titles">CONTACT</p>
+      <p class="subtitles">Fan? Drop a note!</p>
+      <div class="contactInfo">
+        <div class="contactData">
+          <div class="data">
+            <div class="infoIcons">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <p class="dataText">Chicago, US</p>
+          </div>
+          <div class="data">
+            <div class="infoIcons">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <p class="dataText">Phone: +00 151515</p>
+          </div>
+          <div class="data">
+            <div class="infoIcons">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <p class="dataText">Email: mail@mail.com</p>
+          </div>
+        </div>
+        <div>
+          <form>
+            <div class="nameAndMailContainer">
+              <input class="formItem formItem--marginRight" type="text" placeholder="Name">
+              <input class="formItem" type="email" placeholder="Email">
+            </div>
+            <input class="formItem formItem--widthAndMargin" type="text" placeholder="Message">
+            <button class="contactButton" type="submit">SEND</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <img class="map" src="./Resources/map.jpg" alt="Map">
+  </section>
+  <footer>
+    <div class="socialMedia">
+      <i class="fab fa-facebook-square"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-snapchat"></i>
+      <i class="fab fa-pinterest-p"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-linkedin-in"></i>
+    </div>
+    <p class="poweredBy">
+      Powered by <a href="https://www.w3schools.com/w3css/default.asp" class="footerAnchor">w3.css</a>
+    </p>
+  </footer>
 </body>
 </html
