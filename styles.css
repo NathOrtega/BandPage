@@ -1,5 +1,8 @@
 :root{
   --pageFont: 'Lato', sans-serif;
+  --primaryColor: black;
+  --secondaryColor: white;
+  --tertiaryColor: gray;
 }
 
 * {
@@ -12,7 +15,7 @@
 .navBar {
   width: 100%;
   height: 50px;
-  background-color: black;
+  background-color: var(--primaryColor);
   display: flex;
   justify-content: space-between;
 }
@@ -26,35 +29,35 @@
 }
 
 .subMenu {
-  color: white;
+  color: var(--secondaryColor);
   list-style: none;
   display: none;
   position: absolute;
   top: 50px;
-  background-color: black;
+  background-color: var(--primaryColor);
   width: 150px;
   height: 40px;
 }
 
-.itemContainer {
+.navItemContainer {
   height: 100%;
   width: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  background-color: var(--primaryColor);
 }
 
 .item {
-  color: white;
+  color: var(--secondaryColor);
   text-align: center;
 }
 
-.itemContainer:hover {
-  background-color: gray;
+.navItemContainer:hover {
+  background-color: var(--tertiaryColor);
 }
 
-.itemContainer:hover .subMenu {
+.navItemContainer:hover .subMenu {
   display: block;
 }
 
@@ -62,13 +65,13 @@ a {
   text-decoration: none;
 }
 
-.searchIcon {
+.searchButton {
   width: 50px;
   height: 50px;
   margin-right: 10px;
   border: none;
-  background-color: black;
-  color: white;
+  background-color: var(--primaryColor);
+  color: var(--secondaryColor);
   outline: none;
   cursor: pointer;
   font-size: larger;
@@ -83,14 +86,14 @@ a {
   object-fit: cover;
 }
 
-.textContainer {
+.bannerTextContainer {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  color: white;
+  color: var(--secondaryColor);
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.4);
   }
@@ -100,7 +103,7 @@ a {
   font-weight: bold;
 }
 
-.gratitudeText {
+.bannerGratitudeText {
   margin: 20px;
   font-size: medium;
 }
@@ -113,15 +116,15 @@ a {
   justify-content: space-between;
 }
 
-.titles {
+.title {
   margin-bottom: 20px;
   font-weight: 500;
   font-size: 24px;
 }
 
-.subtitles {
+.subtitle {
   margin-bottom: 15px;
-  color: gray;
+  color: var(--tertiaryColor);
   font-style: italic;
   font-size: small;
 }
@@ -160,21 +163,21 @@ a {
 }
 
 .tourDatesContainer {
-  background-color: black;
+  background-color: var(--primaryColor);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.titles--whiteAndmargin {
-  color: white;
+.title--whiteAndmargin {
+  color: var(--secondaryColor);
   margin-top: 50px;
 }
 
 .datesInfoContainer {
   margin: 20px 0 30px;
-  background-color: white;
+  background-color: var(--secondaryColor);
   width: 70%;
 }
 
@@ -184,7 +187,7 @@ a {
   justify-content: flex-start;
   align-items: center;
   padding: 10px;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid var(--tertiaryColor);
 }
 
 .dateContainer--justifyContent {
@@ -193,19 +196,19 @@ a {
 
 .date {
   margin-right: 15px;
-  color: gray;
+  color: var(--tertiaryColor);
 }
 
 .soldOutSign {
   background-color: red;
   padding: 5px;
-  color: white;
+  color: var(--secondaryColor);
   font-weight: 550;
 }
 
 .numberOfDates {
   background-color: black;
-  color: white;
+  color: var(--secondaryColor);
   padding: 5px;
   margin-right: 20px;
   width: 30px;
@@ -225,7 +228,7 @@ a {
   display: flex;
   flex-direction: column;
   width: 32%;
-  background-color: white;
+  background-color: var(--secondaryColor);
 }
 
 .cardImage {
@@ -241,23 +244,22 @@ a {
   margin: 20px 0;
 }
 
-.buyTicketsButton {
-  margin: 20px 0 0;
+.button {
+  background-color: var(--primaryColor);
+  color: var(--secondaryColor);
   padding: 10px;
-  background-color: black;
-  color: white;
+  font-size: medium;
+  font-weight: bold;
   border: none;
   outline: none;
-  font-weight: bold;
-  font-size: medium;
 }
 
-.buyTicketsButton:hover {
+button:hover {
   cursor: pointer;
 }
 
-.buttonText {
-  color: white;
+.buyTicketsButton {
+  margin: 20px 0 0;
 }
 
 .contactInfoContainer {
@@ -279,13 +281,13 @@ a {
   margin-top: 100px;
 }
 
-.contactData {
+.contactDataContainer {
   display: flex;
   flex-direction: column;
   width: 300px;
 }
 
-.data {
+.contactData {
   display: flex;
   flex-direction: row;
   margin: 5px;
@@ -293,7 +295,7 @@ a {
   justify-content: flex-start;
 }
 
-.infoIcons {
+.infoIcon {
   width: 16px;
   height: 16px;
 }
@@ -312,13 +314,14 @@ form {
 }
 
 .nameAndMailContainer {
+  width: 100%;
   display: flex;
   flex-direction: row;
 }
 
 .formItem {
   padding: 10px;
-  width: 200px;
+  width: 50%;
 }
 
 .formItem--marginRight {
@@ -326,22 +329,12 @@ form {
 }
 
 .formItem--widthAndMargin {
-  width: 410px;
+  width: 100%;
   margin: 10px 0;
 }
 
-.contactButton {
-  background-color: black;
-  color: white;
-  padding: 10px;
+.sendButton {
   width: 80px;
-  font-weight: bold;
-  border: none;
-  outline: none;
-}
-
-.contactButton:hover {
-  cursor: pointer;
 }
 
 .map {
@@ -356,17 +349,21 @@ footer {
   align-items: center;
 }
 
-.socialMedia {
-  color: gray;
+.socialMediaIcon {
+  color: var(--tertiaryColor);
   font-size: 25px;
   margin-bottom: 20px;
 }
 
+.socialMediaIcon:hover {
+  color: var(--primaryColor);
+}
+
 .poweredBy {
-  color: gray;
+  color: var(--tertiaryColor);
 }
 
 .footerAnchor {
-  color: gray;
+  color: var(--tertiaryColor);
   text-decoration: underline;
 }

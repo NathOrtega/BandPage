@@ -12,39 +12,39 @@
 <body>
   <nav class="navBar">
     <ul class="menu">
-      <li class="itemContainer">
+      <li class="navItemContainer">
         <a href="#">
           <div class="item">HOME</div>
         </a>
       </li>
-      <li class="itemContainer">
+      <li class="navItemContainer">
         <a href="#">
           <div class="item">BAND</div>
         </a>
       </li>
-      <li class="itemContainer">
+      <li class="navItemContainer">
         <a href="#">
           <div class="item">TOUR</div>
         </a>
       </li>
-      <li class="itemContainer">
+      <li class="navItemContainer">
         <a href="#">
           <div class="item">CONTACT</div>
         </a>
       </li>
-      <li class="itemContainer">
+      <li class="navItemContainer">
         <a href="#">
           <div class="item">
             MORE
             <i class="fas fa-caret-down"></i>
           </div>
           <ul class="subMenu">
-            <li class="itemContainer">
+            <li class="navItemContainer">
               <a href="#">
                 <div class="item">SERVICES</div>
               </a> 
             </li>
-            <li class="itemContainer">
+            <li class="navItemContainer">
               <a href="#">
                 <div class="item">DONATE</div>
               </a>
@@ -53,22 +53,22 @@
         </a>
       </li>
     </ul>
-    <button type="button" class="searchIcon">
+    <button type="button" class="searchButton">
       <i class="fas fa-search"></i>
     </button>
   </nav>
   <section>
     <div class="banner">
-      <div class="textContainer">
+      <div class="bannerTextContainer">
         <p class="cityName">Chicago</p>
-        <p class="gratitudeText">Thank you, Chicago - A night we won't forget.</p>
+        <p class="bannerGratitudeText">Thank you, Chicago - A night we won't forget.</p>
       </div>
       </div>
     </div>
   </section>
   <section class="bandInfoContainer">
-    <h1 class="titles">THE BAND</h1>
-    <p class="subtitles">We love music</p>
+    <h1 class="title">THE BAND</h1>
+    <p class="subtitle">We love music</p>
     <div class="bandHistory">
       <p>
         We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -99,8 +99,8 @@
     </div>
   </section>
   <section class="tourDatesContainer">
-    <p class="titles titles--whiteAndmargin">TOUR DATES</p>
-    <p class="subtitles">Remember to book your tickets!</p>
+    <p class="title title--whiteAndmargin">TOUR DATES</p>
+    <p class="subtitle">Remember to book your tickets!</p>
     <div class="datesInfoContainer">
       <div class="dateContainer">
        <p class="date">September</p>
@@ -130,9 +130,7 @@
           <p class="cityName">New York</p>
           <p class="date date--margin">Fri 27 Nov 2016</p>
           <p>praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
-          <button type="button" class="buyTicketsButton"> 
-            <a href="#" class="buttonText">Buy Tickets</a>
-          </button>
+          <button type="button" class="button buyTicketsButton">Buy Tickets</button>
         </div>
       </div>
       <div class="infoCard">
@@ -143,9 +141,7 @@
           <p class="cityName">Paris</p>
           <p class="date date--margin">Sat 28 Nov 2016</p>
           <p>praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
-          <button type="button" class="buyTicketsButton"> 
-            <a href="#" class="buttonText">Buy Tickets</a>
-          </button>
+          <button type="button" class="button buyTicketsButton">Buy Tickets</button>
         </div>
       </div>
       <div class="infoCard">
@@ -156,33 +152,31 @@
           <p class="cityName">San Francisco</p>
           <p class="date date--margin">Sun 29 Nov 2016</p>
           <p>praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
-          <button type="button" class="buyTicketsButton"> 
-            <a href="#" class="buttonText">Buy Tickets</a>
-          </button>
+          <button type="button" class="button buyTicketsButton">Buy Tickets</button>
         </div>
       </div>
     </div>
   </section>
   <section class="contact">
     <div class="contactInfoContainer">
-      <p class="titles">CONTACT</p>
-      <p class="subtitles">Fan? Drop a note!</p>
+      <p class="title">CONTACT</p>
+      <p class="subtitle">Fan? Drop a note!</p>
       <div class="contactInfo">
-        <div class="contactData">
-          <div class="data">
-            <div class="infoIcons">
+        <div class="contactDataContainer">
+          <div class="contactData">
+            <div class="infoIcon">
               <i class="fas fa-map-marker-alt"></i>
             </div>
             <p class="dataText">Chicago, US</p>
           </div>
-          <div class="data">
-            <div class="infoIcons">
+          <div class="contactData">
+            <div class="infoIcon">
               <i class="fas fa-phone-alt"></i>
             </div>
             <p class="dataText">Phone: +00 151515</p>
           </div>
-          <div class="data">
-            <div class="infoIcons">
+          <div class="contactData">
+            <div class="infoIcon">
               <i class="fas fa-envelope"></i>
             </div>
             <p class="dataText">Email: mail@mail.com</p>
@@ -195,7 +189,7 @@
               <input class="formItem" type="email" placeholder="Email">
             </div>
             <input class="formItem formItem--widthAndMargin" type="text" placeholder="Message">
-            <button class="contactButton" type="submit">SEND</button>
+            <button class="button sendButton" type="submit">SEND</button>
           </form>
         </div>
       </div>
@@ -204,12 +198,24 @@
   </section>
   <footer>
     <div class="socialMedia">
-      <i class="fab fa-facebook-square"></i>
-      <i class="fab fa-instagram"></i>
-      <i class="fab fa-snapchat"></i>
-      <i class="fab fa-pinterest-p"></i>
-      <i class="fab fa-twitter"></i>
-      <i class="fab fa-linkedin-in"></i>
+      <a class="socialMediaIcon" href="https://www.facebook.com/">
+        <i class="fab fa-facebook-square"></i>
+      </a>
+      <a class="socialMediaIcon" href="https://www.instagram.com/">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a class="socialMediaIcon" href="https://www.snapchat.com/l/es/">
+        <i class="fab fa-snapchat"></i>
+      </a>
+      <a class="socialMediaIcon" href="https://co.pinterest.com/">
+        <i class="fab fa-pinterest-p"></i>
+      </a>
+      <a class="socialMediaIcon" href="https://twitter.com/?lang=es">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a class="socialMediaIcon" href="https://www.linkedin.com/">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
     </div>
     <p class="poweredBy">
       Powered by <a href="https://www.w3schools.com/w3css/default.asp" class="footerAnchor">w3.css</a>
